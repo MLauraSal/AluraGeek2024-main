@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+
+    <!--Font-awesome-->
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+
+<body>
+    <!---------- HEADER ---------->
+    <header class="header">
+
+        <a href="index.html" class="logo"><img src="./assets/img/Logo.svg" alt=""></a>
+
+
+        <!--NavBar-->
+
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+            <a href="./assets/pages/products.html">Productos</a>
+            <a href="./pages/contact.html">Contacto</a>
+
+        </nav>
+        <!--Menu-->
+        <div class="icons">
+            <div id="search-btn"><i class="fas fa-search"></i></div>
+            <div id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div id="login-btn"><i class="fas fa-user"></i></div>
+            <div id="menu-btn"><i class="fas fa-bars"></i></div>
+
+        </div>
+        <!--Search-->
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search here....">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <!--Login-->
+        <form action="#" class="login-form">
+            <h3>Login</h3>
+            <input type="email" placeholder="Email registrado" class="box">
+            <input type="password" placeholder="Contraseña" class="box">
+            <p>¿No estas registrado/a?<a href="./pages/contact.html"> Crea tu cuenta </a></p>
+            <input type="submit" value="Login" class="btn">
+
+        </form>
+    </header>
+    <!---------- MAIN ---------->
+    <main>
+
+        <!---------- start HOME ---------->
+        <section class="home">
+            <div class="content">
+                <h3>Agosto Promocional!!</h3>
+                <p>Productos selecionados con 33% de descuento</p>
+
+                <a href="./pages/products.html" class="btn-home">Shop Now</a>
+            </div>
+
+        </section>
+        <!---------- end HOME ---------->
+
+
+        <!---------- start SERVICIOS ---------->
+
+        <section class="servicios" id="servicios">
+
+            <h1 class="heading">Nuestros <span>Servicios</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="./assets/img/delivery.png" alt="logo envio">
+                    <h3>Delivery </h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, accusamus.</p>
+
+                    <a href="#" class="btn">Read more</a>
+                </div>
+                <div class="box">
+                    <img src="./assets/img/payment_icon_194171.png" alt="logo pago seguro">
+                    <h3>Pago Seguro</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, accusamus.</p>
+
+                    <a href="#" class="btn">Read more</a>
+                </div>
+                <div class="box">
+                    <img src="./assets/img/customer_support_help_service_icon_192442.png" alt="logo soporte">
+                    <h3>Soporte 24/7</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, accusamus.</p>
+
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!----------end SERVICIOS ---------->
+
+
+        <!---------- start CATEGORIES ---------->
+        <section class="categories" id="categories">
+            <h1 class="heading">Productos <span>Categorias</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="./assets/img/consolas/technology_11364732 (1).png" alt="">
+                    <h3>Consolas</h3>
+
+
+
+                    <a href="./pages/products.html" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="./assets/img/productos/Vaso.jpg" alt="">
+                    <h3>Accesorios</h3>
+
+
+
+                    <a href="./pages/products.html" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="./assets/img/productos/camiseta-darth-vader-para-hombre-star-wars.webp" alt="">
+                    <h3>Indumentaria</h3>
+
+
+
+                    <a href="./pages/products.html" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="/assets/img/productos/funkowebp.webp" alt="">
+                    <h3>Muñecos</h3>
+
+
+
+                    <a href="./pages/products.html" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="./assets/img/gluten-free-round-green_559531-67122.avif" alt="">
+                    <h3>Productos S/TACC</h3>
+
+
+
+                    <a href="./pages/products.html" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="./assets/img/83436103-logo-100-orgánico-con-hojas-producto-natural-comida-orgánica-y-saludable-insignia-de-alimentos.jpg"
+                        alt="">
+                    <h3>Bebidas Naturales</h3>
+
+
+
+                    <a href="./pages/products.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </section>
+        <!---------- end CATEGORIAS ---------->
+
+        <!---------- start TESTIMONIOS ---------->
+
+        <section class="review">
+            <h1 class="heading"> Nuestros <span>Clientes</span> </h1>
+
+            <div class="swiper review-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide box">
+
+                        <img src="./assets/img/testimonial/testimonial-4.png" alt="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic quasi sint, neque
+                            possimus adipisci quae vel a debitis accusamus!</p>
+
+                        <h3>Jhon Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./assets/img/testimonial/testimonial-3.png" alt="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic quasi sint, neque
+                            possimus adipisci quae vel a debitis accusamus!</p>
+
+                        <h3>Jhon Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./assets/img/testimonial/testimonial-1.jpg" alt="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic quasi sint, neque
+                            possimus adipisci quae vel a debitis accusamus!</p>
+
+                        <h3>Jhon Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./assets/img/testimonial/testimonial-1.jpg" alt="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic quasi sint, neque
+                            possimus adipisci quae vel a debitis accusamus!</p>
+
+                        <h3>Jhon Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./assets/img/testimonial/testimonial-1.jpg" alt="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic quasi sint, neque
+                            possimus adipisci quae vel a debitis accusamus!</p>
+
+                        <h3>Jhon Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="./assets/img/testimonial/testimonial-1.jpg" alt="">
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo hic quasi sint, neque
+                            possimus adipisci quae vel a debitis accusamus!</p>
+
+                        <h3>Jhon Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+        <!---------- end TESTIMONIOS ---------->
+    </main>
+    <!---------- end MAIN ---------->
+
+    <!---------- start FOOTER ---------->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-box">
+                <a href="index.html" class="logo"><img src="./assets/img/Logo.svg" alt="logo Alurageek"></a>
+
+                <p>Siguenos en nuestras redes!!</p>
+                <div class="social">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-square-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                </div>
+            </div>
+
+
+            <div class="footer-box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fab fa-whatsapp-square"></i>+54 9 11 5555 5555</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+54 9 11 2222 2222</a>
+                <a href="./pages/contact.html"><i class="fa-solid fa-envelope"></i>alurageek@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Av.Dr.Tristán Achával Rodríguez,Buenos Aires</a>
+            </div>
+
+
+            <div class="footer-box">
+                <h3>Links</h3>
+                <a href="/index.html"><i class="fa-solid fa-arrow-right"></i>Home</a>
+                <a href="./pages/products.html"><i class="fa-solid fa-arrow-right"></i>Productos</a>
+
+                <a href="./pages/contact.html"><i class="fa-solid fa-arrow-right"></i>Contacto</a>
+            </div>
+
+
+          
+
+
+            <div class="footer-box">
+                <h3>Información adicional</h3>
+
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Gastos de envío</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Política de devoluciones</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Cómo hacer un pedido</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Seguimiento de envío</a>
+                <p class="payment-title">Medios de pago:</p>
+                <img src="./assets/img/payment-img.png" alt="medios de pago" class="payment-img">
+
+            </div>
+
+            
+
+           
+
+        </div>
+       
+        <!-- Copyright -->
+
+        <div class="copyright">
+            &copy; 2024 <span>Salgueiro, Mariana</span> - Todos los Derechos Reservados.
+        </div>
+    </footer>
+    <!---------- end FOOTER ---------->
+
+
+
+    <!---------- SCRIPTS ---------->
+
+    <!-- Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Link JS -->
+    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <!-- Font awesome JS -->
+    <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+</body>
+
+</html>
