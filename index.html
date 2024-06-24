@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Geek</title>
 
+     <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!--Font-awesome-->
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
-
+    <!--Favicon-->
+   <link rel="shortcut icon" href="/assets/img/svg/favicon.ico" type="image/x-icon">
     <!--Swiper-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- Styles -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
 
 </head>
 
@@ -20,7 +25,7 @@
     <!---------- HEADER ---------->
     <header class="header">
 
-        <a href="index.html" class="logo"><img src="./assets/img/Logo.svg" alt=""></a>
+        <a href="index.html" class="logo"><img src="./assets/img/svg/Logo_alura_geek.svg" alt=""></a>
 
 
         <!--NavBar-->
@@ -28,8 +33,8 @@
         <nav class="navbar">
 
             <a href="index.html">Home</a>
-            <a href="./assets/pages/products.html">Productos</a>
-            <a href="./pages/contact.html">Contacto</a>
+            <a href="./pages/products.html">Productos</a>
+            <a href="./pages/register.html">Registro</a>
 
         </nav>
         <!--Menu-->
@@ -48,13 +53,15 @@
         <!--Login-->
         <form action="#" class="login-form">
             <h3>Login</h3>
-            <input type="email" placeholder="Email registrado" class="box">
-            <input type="password" placeholder="Contraseña" class="box">
-            <p>¿No estas registrado/a?<a href="./pages/contact.html"> Crea tu cuenta </a></p>
+            <input type="email" placeholder="Email registrado..." class="box inputs" name="login-email" required>
+            <input type="password" placeholder="Contraseña..." class="box inputs" name="password" required>
+            <p>¿No estas registrado/a?<a href="./pages/register.html"> Crea tu cuenta </a></p>
             <input type="submit" value="Login" class="btn">
 
         </form>
     </header>
+
+
     <!---------- MAIN ---------->
     <main>
 
@@ -79,7 +86,7 @@
 
             <div class="box-container">
                 <div class="box">
-                    <img src="./assets/img/delivery.png" alt="logo envio">
+                    <img src="./assets/img/home/delivery.png" alt="logo envio">
                     <h3>Delivery </h3>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, accusamus.</p>
@@ -87,7 +94,7 @@
                     <a href="#" class="btn">Read more</a>
                 </div>
                 <div class="box">
-                    <img src="./assets/img/payment_icon_194171.png" alt="logo pago seguro">
+                    <img src="./assets/img/home/payment_icon_194171.png" alt="logo pago seguro">
                     <h3>Pago Seguro</h3>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, accusamus.</p>
@@ -95,7 +102,7 @@
                     <a href="#" class="btn">Read more</a>
                 </div>
                 <div class="box">
-                    <img src="./assets/img/customer_support_help_service_icon_192442.png" alt="logo soporte">
+                    <img src="./assets/img/home/customer_support_help_service_icon_192442.png" alt="logo soporte">
                     <h3>Soporte 24/7</h3>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, accusamus.</p>
@@ -116,7 +123,16 @@
 
             <div class="box-container">
                 <div class="box">
-                    <img src="./assets/img/consolas/technology_11364732 (1).png" alt="">
+                    <img src="./assets/img/starwars/auriculares.jpg" alt="auriculares">
+                    <h3>Star Wars </h3>
+
+
+
+                    <a href="./pages/products.html" class="btn">Shop Now</a>
+                </div>
+                <div class="box">
+                    <img src="./assets/img/consolas/Consola Gaming 8bits Noga Ng-fg02 2joystick Color Gris.jpg"
+                        alt="Consola">
                     <h3>Consolas</h3>
 
 
@@ -124,50 +140,16 @@
                     <a href="./pages/products.html" class="btn">Shop Now</a>
                 </div>
                 <div class="box">
-                    <img src="./assets/img/productos/Vaso.jpg" alt="">
+                    <img src="./assets/img/accesorios/D_NQ_NP_838369-MLM70834536107_082023-W.png" alt="Mochila">
                     <h3>Accesorios</h3>
 
 
 
                     <a href="./pages/products.html" class="btn">Shop Now</a>
                 </div>
-                <div class="box">
-                    <img src="./assets/img/productos/camiseta-darth-vader-para-hombre-star-wars.webp" alt="">
-                    <h3>Indumentaria</h3>
-
-
-
-                    <a href="./pages/products.html" class="btn">Shop Now</a>
-                </div>
-                <div class="box">
-                    <img src="/assets/img/productos/funkowebp.webp" alt="">
-                    <h3>Muñecos</h3>
-
-
-
-                    <a href="./pages/products.html" class="btn">Shop Now</a>
-                </div>
-                <div class="box">
-                    <img src="./assets/img/gluten-free-round-green_559531-67122.avif" alt="">
-                    <h3>Productos S/TACC</h3>
-
-
-
-                    <a href="./pages/products.html" class="btn">Shop Now</a>
-                </div>
-                <div class="box">
-                    <img src="./assets/img/83436103-logo-100-orgánico-con-hojas-producto-natural-comida-orgánica-y-saludable-insignia-de-alimentos.jpg"
-                        alt="">
-                    <h3>Bebidas Naturales</h3>
-
-
-
-                    <a href="./pages/products.html" class="btn">Shop Now</a>
-                </div>
-            </div>
+               
         </section>
         <!---------- end CATEGORIAS ---------->
-
         <!---------- start TESTIMONIOS ---------->
 
         <section class="review">
@@ -283,7 +265,7 @@
         <div class="footer-content">
 
             <div class="footer-box">
-                <a href="index.html" class="logo"><img src="./assets/img/Logo.svg" alt="logo Alurageek"></a>
+                <a href="index.html" class="logo"><img src="../assets/img/svg/Logo.svg" alt=""></a>
 
                 <p>Siguenos en nuestras redes!!</p>
                 <div class="social">
@@ -293,27 +275,13 @@
                 </div>
             </div>
 
-
-            <div class="footer-box">
-                <h3>Contact Info</h3>
-                <a href="#"><i class="fab fa-whatsapp-square"></i>+54 9 11 5555 5555</a>
-                <a href="#"><i class="fa-solid fa-phone"></i>+54 9 11 2222 2222</a>
-                <a href="./pages/contact.html"><i class="fa-solid fa-envelope"></i>alurageek@gmail.com</a>
-                <a href="#"><i class="fa-solid fa-location-dot"></i>Av.Dr.Tristán Achával Rodríguez,Buenos Aires</a>
-            </div>
-
-
             <div class="footer-box">
                 <h3>Links</h3>
-                <a href="/index.html"><i class="fa-solid fa-arrow-right"></i>Home</a>
-                <a href="./pages/products.html"><i class="fa-solid fa-arrow-right"></i>Productos</a>
+                <a href="../index.html"><i class="fa-solid fa-arrow-right"></i>Home</a>
+                <a href="../pages/products.html"><i class="fa-solid fa-arrow-right"></i>Productos</a>
 
-                <a href="./pages/contact.html"><i class="fa-solid fa-arrow-right"></i>Contacto</a>
+                <a href="../pages/register.html"><i class="fa-solid fa-arrow-right"></i>Registro</a>
             </div>
-
-
-          
-
 
             <div class="footer-box">
                 <h3>Información adicional</h3>
@@ -323,16 +291,46 @@
                 <a href="#"><i class="fa-solid fa-arrow-right"></i>Cómo hacer un pedido</a>
                 <a href="#"><i class="fa-solid fa-arrow-right"></i>Seguimiento de envío</a>
                 <p class="payment-title">Medios de pago:</p>
-                <img src="./assets/img/payment-img.png" alt="medios de pago" class="payment-img">
+                <img src="../assets/img/home/payment-img.png" alt="medios de pago" class="payment-img">
 
             </div>
 
-            
+            <div class="footer-box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fab fa-whatsapp-square"></i>+54 9 11 5555 5555</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+54 9 11 2222 2222</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>naturalmarket@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Hipolito Yrigoyen 25 Quilmes</a>
+            </div>
 
-           
+            <div class="footer-box">
+                <h3>Contacto</h3>
+
+                <input type="email" placeholder="Email.." class="email">
+
+                <textarea id="message" name="message" rows="4" placeholder="Mensaje.." class="message"
+                    required></textarea>
+
+                <input type="submit" value="Enviar" class="btn">
+
+            </div>
+
+
+
+
+
+
+            <div class="footer-box">
+                <h3>Nuestra Ubicacion</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.252430811051!2d-58.362579637304684!3d-34.6215270461158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d9ab991fe5%3A0xb926aabe1290c523!2sPaseo%20De%20La%20Gloria!5e0!3m2!1ses-419!2sar!4v1715603561902!5m2!1ses-419!2sar"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
 
         </div>
-       
+
         <!-- Copyright -->
 
         <div class="copyright">
@@ -352,9 +350,6 @@
     <script src="./assets/js/swiper.js"></script>
     <!-- Font awesome JS -->
     <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
 </body>
 
 </html>

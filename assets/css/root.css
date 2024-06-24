@@ -1,0 +1,145 @@
+/*-----------------------------------*\
+  #GOOGLE FONTS
+\*-----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    font-family:  'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background-color: var(--preto-05, #F5F5F5);
+    
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color: var(--blue-color);
+}
+
+.heading span {
+    background: var(--blue-color);
+    color: var(--bg-color);
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+.btn {
+    border: .2rem solid var(--blue-color);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    color: var(--blue-color);
+
+}
+
+.btn:hover {
+    background-color: var(--blue-color);
+    color: var(--bg-color);
+}
+
+/*-----------------------------------*\
+  #VARIABLES
+\*-----------------------------------*/
+
+:root {
+    --blue-color:  #166ddf;
+    --orange-color: #ff7e00;
+    --light-orange-color: #f3a95f;
+    --light-color: #666;
+    --black: #040122;
+    --text-color: #464646;
+    --bg-color: #ffffff;
+    --dark-gray: rgb(19, 19, 19);
+    --main-color: rgb(0, 0, 0);
+    --azul-100: rgb(42, 122, 228);
+    --azul-10:rgb(234, 242, 253);
+    --preto-100:#464646;
+    --petro-50:#A2A2A2;
+    --preto-blanco:#FFFFFF;
+    --dark-gray: rgb(19, 19, 19);
+    --main-color: rgb(0, 0, 0);
+    --preto-30:rgb(200, 200, 200);
+    --preto-05: rgb(245, 245, 245);
+
+    --box-shadow-1: 0 0.5rem 1.5rem rgba(0, 0, 0.1);
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.1);
+     
+    --border: .2rem solid rgba(0, 0, 0, 0.1);
+    --outline: .1rem solid rgba(0, 0, 0, 0.2);
+    
+}
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    
+
+    section {
+        padding: 2rem 9%;
+    }
+    
+  
+
+}
+
+
+
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .heading {
+        font-size: 2.5rem;
+    }
+  
+  
+   
+}

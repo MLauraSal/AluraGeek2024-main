@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Font-awesome-->
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
+
+     <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/img/svg/favicon.ico" type="image/x-icon">
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/create_product.css">
+
+</head>
+
+<body>
+    <!---------- HEADER ---------->
+    <header class="header">
+
+        <a href="../index.html" class="logo"><img src="../assets/img/svg/Logo.svg" alt="Logo"></a>
+
+
+        <div class="icons">
+            <a href="./admin.html" class="header__login__link">
+                
+                <button class="header__loginBtn btn">Menú Administrador</button>
+            </a>
+        </div>
+
+       
+    </header>
+
+   
+      
+    <!---------- MAIN ---------->
+    <main>
+        <section class="product__add">
+            <div class="product__box">
+                <form class="product__form"  data-form>
+                    <h1 class="product__title">Agregar nuevo producto</h1>
+                    <div class="input__container ">
+                        <label for="">Url de imagen</label>
+                        <input class="product__img" type="text" placeholder="https://example.com/my-img.png"  required data-url>
+                    </div>
+                    <div class="input__container">
+                        <label for="">Categoría</label>
+                        <input class="product__category" type="text" name="product" required placeholder="consolas" data-category>
+                    </div>
+                    <div class="input__container">
+                        <label for="">Nombre del producto</label>
+                        <input class="product__nombre" type="text" name="name" data-name>
+                    </div>
+                    <div class="input__container">
+                        <label for="price">Precio del producto</label>
+                        <input class="product__price" type="text" required placeholder="$200.00" data-price>
+                    </div>
+                    <div class="input__container">
+                        <label for="">Descripción del producto</label>
+                        <textarea class="product__description" name="description" cols="30" rows="10" data-description></textarea>
+                    </div>
+                    <input class="input__btn btn" type="submit" value="Agregar producto">
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+    <!---------- end MAIN ---------->
+
+    <!---------- start FOOTER ---------->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-box">
+                <a href="index.html" class="logo"><img src="../assets/img/svg/Logo.svg" alt=""></a>
+
+                <p>Siguenos en nuestras redes!!</p>
+                <div class="social">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-square-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>Links</h3>
+                <a href="../index.html"><i class="fa-solid fa-arrow-right"></i>Home</a>
+                <a href="../pages/products.html"><i class="fa-solid fa-arrow-right"></i>Productos</a>
+
+                <a href="../pages/register.html"><i class="fa-solid fa-arrow-right"></i>Registro</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Información adicional</h3>
+
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Gastos de envío</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Política de devoluciones</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Cómo hacer un pedido</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Seguimiento de envío</a>
+                <p class="payment-title">Medios de pago:</p>
+                <img src="../assets/img/home/payment-img.png" alt="medios de pago" class="payment-img">
+
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fab fa-whatsapp-square"></i>+54 9 11 5555 5555</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+54 9 11 2222 2222</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>naturalmarket@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Hipolito Yrigoyen 25 Quilmes</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contacto</h3>
+
+                <input type="email" placeholder="Email.." class="email">
+
+                <textarea id="message" name="message" rows="4" placeholder="Mensaje.." class="message"
+                    required></textarea>
+
+                <input type="submit" value="Enviar" class="btn">
+
+            </div>
+          
+
+
+
+            
+
+            <div class="footer-box">
+                <h3>Nuestra Ubicacion</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.252430811051!2d-58.362579637304684!3d-34.6215270461158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d9ab991fe5%3A0xb926aabe1290c523!2sPaseo%20De%20La%20Gloria!5e0!3m2!1ses-419!2sar!4v1715603561902!5m2!1ses-419!2sar"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+
+        <div class="copyright">
+            &copy; 2024 <span>Salgueiro, Mariana</span> - Todos los Derechos Reservados.
+        </div>
+    </footer>
+    <!---------- end FOOTER ---------->
+
+
+
+    <!---------- SCRIPTS ---------->
+
+    <!-- Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Link JS -->
+    <script src="./assets/js/scripts.js"></script>
+    <script type="module" src="../assets/controllers/addproduct.js"></script>
+    <!-- Font awesome JS -->
+    <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+</body>
+
+</html>

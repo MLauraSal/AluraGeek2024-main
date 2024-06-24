@@ -1,0 +1,33 @@
+{
+  "products": [
+    {
+      "id" :1,
+      "img": "/assets/img/consolas/Consola Gaming 8bits Noga Ng-fg02 2joystick Color Gris.jpg",
+      "name": "Xbox Series S 512gb Digital",
+      "price": "$4500.00",
+      "Description": "Consola Xbox Series S 512gb Digital Blanco",
+      "category": "consolas"
+      
+    },
+    
+    {
+      "id": 2,
+      "img": "/assets/img/starwars/auriculares.jpg",
+      "name": "Auriculares star wars",
+      "price": "$4500.00",
+      "Description": "Auriculares star wars gamers rojo y negro",
+      "category": "star wars"
+     
+    },
+    {
+      "id": 3,
+      "img": "/assets/img/accesorios/D_NQ_NP_838369-MLM70834536107_082023-W.png",
+      "name": "Mochila Pikachu",
+      "price": "$10500.00",
+      "Description": "Mochila negra con refuerzo",
+      "category": "accesorios"
+      
+    }
+  ]
+  
+}

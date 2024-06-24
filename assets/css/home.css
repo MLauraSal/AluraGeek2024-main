@@ -1,0 +1,209 @@
+@import "root.css";
+@import "header.css";
+@import "footer.css";
+
+
+
+
+/*-----------------------------------*\
+  #SECTION HOME
+\*-----------------------------------*/
+
+.home {
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 650px;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/assets/img/home/a4437326e7b8dedb31340ee1be61224c.webp) center/cover no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.home .content {
+    
+   
+    width: 80rem;
+    
+}
+
+.content h3 {
+    color: var(--blue-color);
+    letter-spacing: .5rem;
+    font-size: 6rem;
+    font-family: "Playwrite FR Moderne";
+    
+}
+
+.content p {
+    color: var(--blue-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.btn-home {
+    border: .2rem solid var(--bg-color);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    color: var(--bg-color);
+
+}
+
+.btn-home:hover {
+    background-color: var(--blue-color);
+    color: var(--bg-color);
+    border: .2rem solid var(--blue-color);
+}
+
+/*-----------------------------------*\
+  #SECTION SERVICIOS
+\*-----------------------------------*/
+
+.servicios .box-container {
+    border: 0px solid;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.servicios .box-container .box {
+    border: 0px solid;
+    padding: 3rem 2rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    background: var(--bg-color);
+    text-align: center;
+    box-shadow: var(--box-shadow-1);
+    transition: 0.2s;
+   
+}
+
+.servicios .box-container .box:hover {
+    box-shadow: 0 0.5rem 1rem var(--blue-color); 
+}
+
+.servicios .box-container .box img {
+  
+    height: 15rem;
+    margin: 1rem 0;
+}
+
+.servicios .box-container .box h3 {
+    font-size: 2.5rem;
+    line-height: 1.8rem;
+    color: var(--text-color);
+}
+
+.servicios .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+/*-----------------------------------*\
+  #SECTION CATEGORIES
+\*-----------------------------------*/
+
+
+.categories .box-container {
+    border: 0px solid;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.categories .box-container .box {
+    border: 0px solid;
+    padding: 3rem 0;
+    background: var(--bg-color);
+    text-align: center;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow-1);
+    transition: 0.2s ease-in-out;
+   
+}
+
+.categories .box-container .box:hover {
+    box-shadow: 0 0.5rem 1rem var(--blue-color); 
+    transform: translateY(-5px);
+}
+
+.categories .box-container .box img {
+    width: 60%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+
+.categories .box-container .box h3 {
+    font-size: 2rem;
+    line-height: 1.8rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+}
+
+/*-----------------------------------*\
+  #SECTION REVIEW
+\*-----------------------------------*/
+
+
+
+.review .review-slider {
+    
+    border: 0px solid;
+    padding: 1rem;
+}
+
+.review .review-slider .box {
+    border: 0px solid;
+    background: var(--bg-color);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow-1);
+    transition: .2s linear;
+    margin-bottom: 1rem;
+}
+
+.review .review-slider .box:hover {
+    box-shadow: 1px 1px 10px 4px var(--blue-color);
+}
+
+.review .review-slider .box img {
+
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.review .review-slider .box p {
+
+    padding: 1rem 0;
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.review .review-slider .box h3 {
+    padding-bottom: 0.5rem;
+    font-size: 2.2rem;
+    color: var(--text-color);
+}
+
+.review .review-slider .box .stars i {
+
+    color: var(--orange-color);
+    font-size: 1.7rem;
+}
+

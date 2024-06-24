@@ -1,0 +1,154 @@
+@import "root.css";
+
+/*-----------------------------------*\
+  #SECTION FOOTER
+\*-----------------------------------*/
+
+
+.footer {
+    background: var(--bg-color);
+
+}
+
+.footer-content {
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.footer-box h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--blue-color);
+    padding: 1rem 0;
+}
+
+
+.footer-box a {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+}
+
+.footer-box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer-box a i {
+    color: var(--blue-color);
+    padding-right: .5rem;
+}
+.footer-box p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.social {
+    display: flex;
+   
+}
+.social a {
+    border: 0px solid;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    background: #eee;
+    color: var(--text-color);
+    margin-left: .3rem;
+    cursor: pointer;
+    
+}
+
+.social a:hover {
+    color: var(--bg-color);
+    background-color: var(--blue-color);
+}
+
+.email {
+    margin: .7rem 0;
+    width: 80%;
+    padding: 1rem;
+    background: #fff;
+	border: 1px solid var(--blue-color);
+	border-radius: 3px;
+	height: 45px;
+     font-size: 1.6rem;
+    color: var(--light-color);
+    text-transform: none;
+}
+
+.message {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--blue-color);
+}
+
+.payment-img {
+    margin-top: 0.8rem;
+    padding: 2rem;
+}
+
+
+.footer-box .sellos {
+    justify-content: space-between;
+    width: 30%;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    align-items: center;
+    
+}  
+
+.footer .copyright {
+   text-align: center;
+   margin-top: 2rem;
+   padding: 1rem;
+   padding-top: 2.5rem;
+   color: var(--text-color);
+   font-size: 1.5rem;
+}
+
+.footer .copyright span {
+    color: var(--blue-color);
+    font-weight: 500;
+}
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+
+
+@media (max-width: 450px) {
+   
+    .footer-box {
+        text-align: center;
+    }
+    .footer-box a {
+        text-align: left;
+    }
+    .social a {
+        
+        text-align: center;
+    }
+    
+    
+    .social  {
+        
+        justify-content: center;
+        
+    } 
+
+    
+  
+   
+}

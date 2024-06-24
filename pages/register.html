@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek-Registro</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../assets/img/svg/favicon.ico" type="image/x-icon">
+
+    <!--Font-awesome-->
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="../assets/css/register.css">
+
+</head>
+
+<body>
+    <!---------- HEADER ---------->
+    <header class="header">
+
+        <a href="index.html" class="logo"><img src="../assets/img/svg/Logo.svg" alt=""></a>
+
+
+        <!--NavBar-->
+
+        <nav class="navbar">
+
+            <a href="../index.html">Home</a>
+            <a href="../pages/products.html">Productos</a>
+            <a href="../pages/register.html">Register</a>
+
+        </nav>
+
+        <div class="icons">
+            <div id="search-btn"><i class="fas fa-search"></i></div>
+            <div id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div id="login-btn"><i class="fas fa-user"></i></div>
+            <div id="menu-btn"><i class="fas fa-bars"></i></div>
+
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search here....">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <form action="#" class="login-form" id="login">
+            <h3>Login</h3>
+            <input type="email" placeholder="Email registrado" class="box">
+            <input type="password" placeholder="Contraseña" class="box">
+            <p>¿No estas registrado/a?<a href="../pages/contact.html"> Crea tu cuenta </a></p>
+            <input type="submit" value="Login" class="btn">
+
+        </form>
+    </header>
+
+    <!---------- MAIN ---------->
+    <main>
+        <section class="register">
+
+            <div class="register-container">
+                <h2>Registro</h2>
+                <form action="" class="formulario" id="formulario">
+                    <!-- Grupo: Usuario -->
+                    <div class="formulario__grupo" id="grupo__usuario">
+                        <label for="usuario" class="formulario__label">Usuario</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="usuario" id="usuario"
+                                placeholder="john123">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede
+                            contener numeros, letras y guion bajo.</p>
+                    </div>
+
+                    <!-- Grupo: Nombre -->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre"
+                                placeholder="John Doe">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede
+                            contener numeros, letras y guion bajo.</p>
+                    </div>
+
+                    <!-- Grupo: Contraseña -->
+                    <div class="formulario__grupo" id="grupo__password">
+                        <label for="password" class="formulario__label">Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password" id="password">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                    </div>
+
+                    <!-- Grupo: Contraseña 2 -->
+                    <div class="formulario__grupo" id="grupo__password2">
+                        <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                        <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password2" id="password2">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                    </div>
+
+                    <!-- Grupo: Correo Electronico -->
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo Electrónico</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo"
+                                placeholder="correo@correo.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos,
+                            guiones y guion bajo.</p>
+                    </div>
+
+                    <!-- Grupo: Teléfono -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono"
+                                placeholder="4491234567">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14
+                            dígitos.</p>
+                    </div>
+
+                    <!-- Grupo: Terminos y Condiciones -->
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            Acepto los Terminos y Condiciones
+                        </label>
+                    </div>
+
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                            correctamente. </p>
+                    </div>
+
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
+                            exitosamente!</p>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+     <!---------- start FOOTER ---------->
+     <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-box">
+                <a href="index.html" class="logo"><img src="../assets/img/svg/Logo.svg" alt=""></a>
+
+                <p>Siguenos en nuestras redes!!</p>
+                <div class="social">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-square-instagram"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>Links</h3>
+                <a href="../index.html"><i class="fa-solid fa-arrow-right"></i>Home</a>
+                <a href="../pages/products.html"><i class="fa-solid fa-arrow-right"></i>Productos</a>
+
+                <a href="../pages/register.html"><i class="fa-solid fa-arrow-right"></i>Registro</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Información adicional</h3>
+
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Gastos de envío</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Política de devoluciones</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Cómo hacer un pedido</a>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i>Seguimiento de envío</a>
+                <p class="payment-title">Medios de pago:</p>
+                <img src="../assets/img/home/payment-img.png" alt="medios de pago" class="payment-img">
+
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fab fa-whatsapp-square"></i>+54 9 11 5555 5555</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+54 9 11 2222 2222</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>naturalmarket@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i>Hipolito Yrigoyen 25 Quilmes</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contacto</h3>
+
+                <input type="email" placeholder="Email.." class="email">
+
+                <textarea id="message" name="message" rows="4" placeholder="Mensaje.." class="message"
+                    required></textarea>
+
+                <input type="submit" value="Enviar" class="btn">
+
+            </div>
+
+
+
+
+
+
+            <div class="footer-box">
+                <h3>Nuestra Ubicacion</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.252430811051!2d-58.362579637304684!3d-34.6215270461158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d9ab991fe5%3A0xb926aabe1290c523!2sPaseo%20De%20La%20Gloria!5e0!3m2!1ses-419!2sar!4v1715603561902!5m2!1ses-419!2sar"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+
+        <div class="copyright">
+            &copy; 2024 <span>Salgueiro, Mariana</span> - Todos los Derechos Reservados.
+        </div>
+    </footer>
+    <!---------- end FOOTER ---------->
+
+
+
+
+
+
+    <!-- Link JS -->
+    <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/register.js"></script>
+    <!-- Font awesome JS -->
+    <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
