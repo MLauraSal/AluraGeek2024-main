@@ -13,15 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="/assets/img/svg/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/svg/favicon.ico" type="image/x-icon">
 
     <!--Font-awesome-->
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
    
     <!--Styles-->
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/products.css">
-    <link rel="stylesheet" href="/assets/css/product_detail.css">
+    
+    <link rel="stylesheet" href="../assets/css/product_detail.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
 
 </head>
 
@@ -44,16 +44,16 @@
 
         <!--Menu-->
         <div class="icons">
-            <div id="search-btn"><i class="fas fa-search"></i></div>
+            <div id="search-btn" class="search__link"><i class="fas fa-search"></i></div>
             <div id="shop-btn"><i class="fa-solid fa-cart-shopping"></i></div>
             <div id="login-btn"><i class="fas fa-user"></i></div>
             <div id="menu-btn"><i class="fas fa-bars"></i></div>
 
         </div>
         <!--Search-->
-        <form class="search-form">
-            <input type="search" id="search-box" placeholder="Search here....">
-            <label for="search-box" class="fas fa-search"></label>
+        <form class="search-form" id="header__search hide">
+            <input type="search" id="search-box" class="search__input"   placeholder="Search here....">
+            <label for="search-box" class="fas fa-search" id="icon__search" data-search></label>
         </form>
         <!--Login-->
         <form action="#" class="login-form">
@@ -89,31 +89,33 @@
                 <div class="detail__img">
                     <img src="" alt="imagen producto" data-img>
                 </div>
-                <div class="detail__descripcion">
-                    <h1 class="detail__titulo" data-name></h1>
-                    <h4 class="detail__precio" data-price></h4>
+                <div class="detail__description">
+                    <h1 class="detail__title" data-name></h1>
+                    <h4 class="detail__price" data-price></h4>
                     <p class="detail__parrafo" data-description></p>
                 </div>
             </div>
         </section>
         <!-- Productos similares -->
-        <section class="productos">
-
-            <div class="productos__flia">
-                <div class="productos__barra">
-                    <div class="productos__titulo">
-                        <h2 class="productos__titulo">Productos relacionados</h2>
-                    </div>
-                    <a href="../screens/productos.html" class="productos__verMas">
-                        <h4>Ver más</h4>
-                        <span class="productos__iconoFlecha"></span>
-                    </a>
-                </div>
-                <div class="productos__tarjetas" data-section="relacionados">
-
-
-                </div>
-            </div>
+        <section class="container">
+            <div class="shop">
+ 
+                 <h1 class="heading">Productos<span>Relacionados</span></h1>
+                 <a href="../pages/products.html" class="verMas">
+                    <h4>Ver más</h4>
+                    <span class="icon_arrow"></span>
+                </a>
+             
+                 <div class="list" data-section="relacionados">
+                         
+                 </div>
+                 
+             </div>
+          
+     
+         </section>
+        
+       
 
 
 
@@ -196,13 +198,12 @@
 
         <!---------- SCRIPTS ---------->
 
-        <!-- Swiper script -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!-- Link JS -->
-        <script src="../assets/js/products.js"></script>
-
+       
         <!-- Link JS -->
         <script src="../assets/js/scripts.js"></script>
+        <script type="module" src="../assets/controllers/product.js"></script>
+       
+        
         <!-- Font awesome JS -->
         <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>
 </body>

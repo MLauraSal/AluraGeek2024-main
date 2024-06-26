@@ -68,6 +68,7 @@ section {
     font-weight: 500;
     border-radius: .5rem;
     color: var(--blue-color);
+    background-color: var(--bg-color);
 
 }
 
@@ -76,6 +77,70 @@ section {
     color: var(--bg-color);
 }
 
+.btn_product {
+    border: .2rem solid var(--blue-color);
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    color: var(--blue-color);
+}
+
+
+.btn_product:hover {
+    background-color: var(--blue-color);
+    color: var(--bg-color);
+}
+
+.btn_admin {
+    border: .2rem solid var(--blue-color);
+    margin-top: 1rem;
+    display: flex;
+	justify-content: flex-end;
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    color: var(--blue-color);
+}
+
+
+.btn_admin:hover {
+    background-color: var(--blue-color);
+    color: var(--bg-color);
+}
+
+.verMas {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.verMas h4 {
+	display: flex;
+	color: var(--azul-100, #2a7ae4);
+	font-family: "Raleway", sans-serif;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.icon_arrow {
+	background-image: url("/assets/img/svg/arrow.svg");
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 24px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.hide {
+    display: none;
+}
 /*-----------------------------------*\
   #VARIABLES
 \*-----------------------------------*/

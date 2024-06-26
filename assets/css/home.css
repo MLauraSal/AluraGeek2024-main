@@ -110,45 +110,53 @@
 /*-----------------------------------*\
   #SECTION CATEGORIES
 \*-----------------------------------*/
+.container {
+    padding: 2rem 9%;
+}
 
-
-.categories .box-container {
+.list {
     border: 0px solid;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
+    margin-top: 5rem;
 }
 
-.categories .box-container .box {
+.list .item {
     border: 0px solid;
-    padding: 3rem 0;
-    background: var(--bg-color);
-    text-align: center;
+    box-sizing: border-box;
+    padding: 3rem 2rem;
     outline: var(--outline);
     outline-offset: -1rem;
-    border-radius: .5rem;
+    background: var(--bg-color);
+    text-align: center;
     box-shadow: var(--box-shadow-1);
-    transition: 0.2s ease-in-out;
+    transition: 0.2s;
    
 }
 
-.categories .box-container .box:hover {
+.list .item:hover {
     box-shadow: 0 0.5rem 1rem var(--blue-color); 
     transform: translateY(-5px);
 }
 
-.categories .box-container .box img {
+.item img  {
     width: 60%;
     height: auto;
     margin: 1rem 0;
 }
 
 
-.categories .box-container .box h3 {
+.item .product-title {
     font-size: 2rem;
     line-height: 1.8rem;
     color: var(--text-color);
     padding: 1rem 0;
+}
+
+.item .product-price {
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 /*-----------------------------------*\

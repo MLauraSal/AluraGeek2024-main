@@ -1,3 +1,8 @@
+@import "root.css";
+@import "header.css";
+@import "footer.css";
+
+
 .detail {
 	display: flex;
 	width: 100%;
@@ -21,10 +26,14 @@
 }
 
 .detail__img img {
-	max-width: 50rem;
+	width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: .5rem;
 }
 
-.detail__descripcion {
+.detail__description {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -32,7 +41,7 @@
 	padding: 2rem;
 }
 
-.detail__titulo {
+.detail__title {
 	color: var(--preto-100, #464646);
 	font-family: Raleway;
 	font-size: 52px;
@@ -40,7 +49,7 @@
 	font-weight: 500;
 	line-height: normal;
 }
-.detail__precio {
+.detail__price {
 	color: var(--preto-100, #464646);
 	font-family: Raleway;
 	font-size: 31px;
@@ -58,7 +67,8 @@
     text-align: left;
 }
 
-/* productos similares */
+
+
 
 @media screen and (max-width: 1024px) {
 	.detail__container {
@@ -71,7 +81,7 @@
 	.detail__img img {
 		max-width: 28rem;
 	}
-	.detail__titulo {
+	.detail__title {
 		font-size: 2.5rem;
 		margin: 0;
 	}
@@ -91,12 +101,12 @@
 		max-width: 22rem;
 	}
 
-	.detail__descripcion {
+	.detail__description {
 		width: 100%;
 		margin: 0;
 		padding: 0;
 	}
-	.detail__precio {
+	.detail__price {
 		margin: 0;
 	}
 }

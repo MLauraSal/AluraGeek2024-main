@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Geek</title>
 
-     <!--Google Fonts-->
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!--Font-awesome-->
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
     <!--Favicon-->
-   <link rel="shortcut icon" href="/assets/img/svg/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/svg/favicon.ico" type="image/x-icon">
     <!--Swiper-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- Styles -->
@@ -39,16 +40,16 @@
         </nav>
         <!--Menu-->
         <div class="icons">
-            <div id="search-btn"><i class="fas fa-search"></i></div>
+            <div id="search-btn" class="search__link"><i class="fas fa-search"></i></div>
             <div id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></div>
             <div id="login-btn"><i class="fas fa-user"></i></div>
             <div id="menu-btn"><i class="fas fa-bars"></i></div>
 
         </div>
         <!--Search-->
-        <form class="search-form">
-            <input type="search" id="search-box" placeholder="Search here....">
-            <label for="search-box" class="fas fa-search"></label>
+        <form class="search-form" id="header__search hide">
+            <input type="search" id="search-box" class="search__input"   placeholder="Search here....">
+            <label for="search-box" class="fas fa-search" id="icon__search" data-search></label>
         </form>
         <!--Login-->
         <form action="#" class="login-form">
@@ -77,6 +78,49 @@
         </section>
         <!---------- end HOME ---------->
 
+        <!---------- start CATEGORIES ---------->
+        <section class="container">
+            <section class="categories" id="starwars">
+                <h1 class="heading">Categoria <span>Star Wars</span></h1>
+
+                <a href="../pages/products.html" class="verMas" data-starwars>
+                    <h4>Ver más</h4>
+                    <span class="icon_arrow"></span>
+                </a>
+
+                <div class="list" data-section="starwars">
+
+                </div>
+
+            </section>
+            <section class="categories" id="consolas">
+                <h1 class="heading">Categoria <span>Consolas</span></h1>
+
+                <a href="../pages/products.html" class="verMas" data-consolas>
+                    <h4>Ver más</h4>
+                    <span class="icon_arrow"></span>
+                </a>
+                <div class="list" data-section="consolas">
+
+                </div>
+
+
+            </section>
+            <section class="categories" id="accesorios">
+                <h1 class="heading">Categoria <span>Accesorios</span></h1>
+
+                <a href="../pages/products.html" class="verMas" data-accesorios>
+                    <h4>Ver más</h4>
+                    <span class="icon_arrow"></span>
+                </a>
+                <div class="list" data-section="accesorios">
+
+                </div>
+
+            </section>
+
+        </section>
+        <!---------- end CATEGORIAS ---------->
 
         <!---------- start SERVICIOS ---------->
 
@@ -116,40 +160,6 @@
 
         <!----------end SERVICIOS ---------->
 
-
-        <!---------- start CATEGORIES ---------->
-        <section class="categories" id="categories">
-            <h1 class="heading">Productos <span>Categorias</span></h1>
-
-            <div class="box-container">
-                <div class="box">
-                    <img src="./assets/img/starwars/auriculares.jpg" alt="auriculares">
-                    <h3>Star Wars </h3>
-
-
-
-                    <a href="./pages/products.html" class="btn">Shop Now</a>
-                </div>
-                <div class="box">
-                    <img src="./assets/img/consolas/Consola Gaming 8bits Noga Ng-fg02 2joystick Color Gris.jpg"
-                        alt="Consola">
-                    <h3>Consolas</h3>
-
-
-
-                    <a href="./pages/products.html" class="btn">Shop Now</a>
-                </div>
-                <div class="box">
-                    <img src="./assets/img/accesorios/D_NQ_NP_838369-MLM70834536107_082023-W.png" alt="Mochila">
-                    <h3>Accesorios</h3>
-
-
-
-                    <a href="./pages/products.html" class="btn">Shop Now</a>
-                </div>
-               
-        </section>
-        <!---------- end CATEGORIAS ---------->
         <!---------- start TESTIMONIOS ---------->
 
         <section class="review">
@@ -348,6 +358,10 @@
     <!-- Link JS -->
     <script src="./assets/js/scripts.js"></script>
     <script src="./assets/js/swiper.js"></script>
+    <script type="module" src="./assets/controllers/product_category.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Font awesome JS -->
     <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>
 </body>

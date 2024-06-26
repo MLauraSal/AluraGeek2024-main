@@ -1,16 +1,36 @@
+// Selección de elementos del DOM
+const searchForm = document.querySelector(".search-form");
+const searchBtn = document.querySelector("#search-btn");
+const inputSearch = document.querySelector("#search-box");
+const iconBuscar = document.querySelector("#icon__search");
 
-/*
- * FUNCTION SEARCH FORM
-*/
-const searchForm = document.querySelector('.search-form');
-
-document.querySelector('#search-btn').onclick = () => {
-    searchForm.classList.toggle('active');
-    navbar.classList.remove('active');
-    loginForm.classList.remove('active');
-    
+// Función para mostrar/ocultar el formulario de búsqueda
+searchBtn.onclick = () => {
+    searchForm.classList.toggle("active");
+    // Opcional: Si quieres desactivar otros elementos como navbar y loginForm, añádelos aquí.
+    // navbar.classList.remove("active");
+    // loginForm.classList.remove("active");
 }
 
+// Función para ocultar el formulario de búsqueda cuando se hace clic fuera
+document.addEventListener("click", (e) => {
+    if (!searchForm.contains(e.target) && !searchBtn.contains(e.target)) {
+        searchForm.classList.remove("active");
+    }
+});
+
+// Función para ocultar el formulario de búsqueda al hacer scroll
+window.addEventListener("scroll", () => {
+    searchForm.classList.remove("active");
+});
+
+// Función de búsqueda
+iconBuscar.addEventListener("click", () => {
+    let buscar = inputSearch.value;
+    if (buscar.trim() !== "") {
+        window.location.href = `../pages/search.html?query=${encodeURIComponent(buscar)}`;
+    }
+});
 
 
 /*

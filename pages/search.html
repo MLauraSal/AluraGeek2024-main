@@ -9,14 +9,15 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!--Favicon-->
     <link rel="shortcut icon" href="/assets/img/svg/favicon.ico" type="image/x-icon">
 
     <!--Font-awesome-->
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
-   
+
     <!--Styles-->
     <link rel="stylesheet" href="../assets/css/products.css">
 
@@ -38,20 +39,19 @@
             <a href="../pages/register.html">Registro</a>
 
         </nav>
-
-        <!--Menu-->
+        <!-- Menu -->
         <div class="icons">
             <div id="search-btn" class="search__link"><i class="fas fa-search"></i></div>
             <div id="shop-btn"><i class="fa-solid fa-cart-shopping"></i></div>
             <div id="login-btn"><i class="fas fa-user"></i></div>
             <div id="menu-btn"><i class="fas fa-bars"></i></div>
-
         </div>
-        <!--Search-->
-        <form class="search-form" id="header__search hide">
-            <input type="search" id="search-box" class="search__input"   placeholder="Search here....">
+        <!-- Search -->
+        <form class="search-form " id="header__search hide">
+            <input type="search" id="search-box" class="search__input" placeholder="Search here....">
             <label for="search-box" class="fas fa-search" id="icon__search" data-search></label>
         </form>
+
         <!--Login-->
         <form action="#" class="login-form">
             <h3>Login</h3>
@@ -61,26 +61,29 @@
             <input type="submit" value="Login" class="btn">
 
         </form>
-        
-        
+
+
 
     </header>
 
-     <!---------- MAIN ---------->
-     <main>
+    <!---------- MAIN ---------->
+    <main>
         <!---------- start SHOP ---------->
-        <section class="container">
-           <div class="shop">
+        <section class="container all-products">
+            <div class="shop">
 
-                <h1 class="heading">Nuestros <span>Productos</span></h1>
-            
-                <div class="list" data-productos>
-                        
+                <h1 class="heading">Productos<span>Encontrados</span></h1>
+                <a href="../pages/products.html" class="verMas" data-starwars>
+                    <h4>Ver más</h4>
+                    <span class="icon_arrow"></span>
+                </a>
+                <div class="list" data-section>
+
                 </div>
-                
+
             </div>
-         
-    
+
+
         </section>
 
         <!---------- end SHOP ---------->
@@ -92,7 +95,7 @@
         <div class="footer-content">
 
             <div class="footer-box">
-                <a href="index.html" class="logo"><img src="../assets/img/svg/Logo_alura_geek.svg" alt=""></a>
+                <a href="index.html" class="logo"><img src="../assets/img/svg/Logo.svg" alt=""></a>
 
                 <p>Siguenos en nuestras redes!!</p>
                 <div class="social">
@@ -141,11 +144,11 @@
                 <input type="submit" value="Enviar" class="btn">
 
             </div>
-          
 
 
 
-            
+
+
 
             <div class="footer-box">
                 <h3>Nuestra Ubicacion</h3>
@@ -157,7 +160,7 @@
             </div>
 
         </div>
-       
+
         <!-- Copyright -->
 
         <div class="copyright">
@@ -170,12 +173,15 @@
 
     <!---------- SCRIPTS ---------->
 
-  
+
     <!-- Link JS -->
     <script src="/assets/js/scripts.js"></script>
-    <script type="module" src="../assets/controllers/allproducts.js"></script>
-    
- 
+    <script type="module" src="../assets/controllers/search_result.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Font awesome JS -->
     <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>
 </body>

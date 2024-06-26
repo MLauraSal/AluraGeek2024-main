@@ -1,33 +1,36 @@
 {
   "products": [
     {
-      "id" :1,
+      "id": "1",
       "img": "/assets/img/consolas/Consola Gaming 8bits Noga Ng-fg02 2joystick Color Gris.jpg",
       "name": "Xbox Series S 512gb Digital",
       "price": "$4500.00",
-      "Description": "Consola Xbox Series S 512gb Digital Blanco",
+      "description": "Consola Xbox Series S 512gb Digital Blanco",
       "category": "consolas"
-      
     },
-    
     {
-      "id": 2,
+      "id": "2",
       "img": "/assets/img/starwars/auriculares.jpg",
       "name": "Auriculares star wars",
       "price": "$4500.00",
-      "Description": "Auriculares star wars gamers rojo y negro",
-      "category": "star wars"
-     
+      "description": "Auriculares star wars gamers rojo y negro",
+      "category": "starwars"
     },
     {
-      "id": 3,
+      "id": "3",
       "img": "/assets/img/accesorios/D_NQ_NP_838369-MLM70834536107_082023-W.png",
       "name": "Mochila Pikachu",
       "price": "$10500.00",
-      "Description": "Mochila negra con refuerzo",
+      "description": "Mochila negra con refuerzo",
       "category": "accesorios"
-      
+    },
+    {
+      "id": "e48893cf-2e5c-4f3d-93c5-3ed54ee1600c",
+      "img": "https://www.cibermoda.mx/assets/images/craft_images/productos/Consola-Retro-Portatil-X12-Plus-pantalla-7-pulgadas-color-rojo-azul-joystick.webp",
+      "name": "X12 Plus",
+      "price": "$45000",
+      "description": "consola portatil, 16 Gb de RAM",
+      "category": "consolas"
     }
   ]
-  
 }

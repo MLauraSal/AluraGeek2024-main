@@ -39,20 +39,22 @@
             <a href="../pages/register.html">Register</a>
 
         </nav>
-
+        <!--Menu icons-->
         <div class="icons">
-            <div id="search-btn"><i class="fas fa-search"></i></div>
+            <div id="search-btn" class="search__link"><i class="fas fa-search"></i></div>
             <div id="cart-btn"><i class="fa-solid fa-cart-shopping"></i></div>
             <div id="login-btn"><i class="fas fa-user"></i></div>
             <div id="menu-btn"><i class="fas fa-bars"></i></div>
 
         </div>
 
-        <form class="search-form">
-            <input type="search" id="search-box" placeholder="Search here....">
-            <label for="search-box" class="fas fa-search"></label>
+         <!--Search-->
+         <form class="search-form" id="header__search hide">
+            <input type="search" id="search-box" class="search__input"   placeholder="Search here....">
+            <label for="search-box" class="fas fa-search" id="icon__search" data-search></label>
         </form>
 
+        <!--Login-->
         <form action="#" class="login-form" id="login">
             <h3>Login</h3>
             <input type="email" placeholder="Email registrado" class="box">
@@ -249,6 +251,7 @@
     <!-- Link JS -->
     <script src="../assets/js/scripts.js"></script>
     <script src="../assets/js/register.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Font awesome JS -->
     <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>
 </body>

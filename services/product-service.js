@@ -14,15 +14,16 @@ const fetchData = async (url, options = {}) => {
 
 // Object that contains all service functions to interact with the API
 export const productServices = {
-  // Get products from the "starwars" category
-  starwars: () => fetchData(`${BASE_API_URL}?category=starwars`),
 
-  // Get products from the "consolas" category
-  consolas: () => fetchData(`${BASE_API_URL}?category=consolas`),
+   // Get products from the "starwars" category
+   starwars: () => fetchData(`${BASE_API_URL}?category=starwars`),
 
-  // Get products from the "accesorios" category
-  accesorios: () => fetchData(`${BASE_API_URL}?category=accesorios`),
-
+   // Get products from the "consolas" category
+   consolas: () => fetchData(`${BASE_API_URL}?category=consolas`),
+ 
+   // Get products from the "accesorios" category
+   accesorios: () => fetchData(`${BASE_API_URL}?category=accesorios`),
+  
   // Get all products without filtering
   allProducts: () => fetchData(BASE_API_URL),
 
@@ -34,7 +35,7 @@ export const productServices = {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ img, category, name, price, description, id }),
+      body: JSON.stringify({ img, name, price, description, category, id }),
     });
   },
 
@@ -56,8 +57,10 @@ export const productServices = {
   },
 
   // Get details of a product by its ID (seems duplicated)
-  productoIndividual: (id) => fetchData(`${BASE_API_URL}/${id}`),
+  productId: (id) => fetchData(`${BASE_API_URL}/${id}`),
 
-  // Get related products (not used in this code)
+  
+
+  // Get related products 
   relacionados: () => fetchData(BASE_API_URL),
 };

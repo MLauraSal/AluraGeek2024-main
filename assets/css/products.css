@@ -3,9 +3,7 @@
 @import "footer.css";
 
 
-/*-----------------------------------*\
-  #CART
-\*-----------------------------------*/
+
 .container {
     max-width: 1067px;
     margin: auto;
@@ -16,6 +14,9 @@ img {
     width: 100%;
 }
 
+.hide {
+    display: none;
+}
 
 /*-----------------------------------*\
   #LIST PRODUCTS
@@ -33,6 +34,7 @@ img {
     gap: 2rem;
     margin-top: 5rem;
 }
+
 
 
 .item {
@@ -72,19 +74,54 @@ img {
     font-size: 1.5rem;
 }
 
-.item .btn_product {
-    border: .2rem solid var(--blue-color);
-    margin-top: 1rem;
-    display: inline-block;
-    padding: .5rem 2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
+
+
+.editar__container{
+	gap: 3.4rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+	margin-top: 2rem;
     border-radius: .5rem;
+    color: var(--blue-color);
+
+}
+
+.editar__container .editaricono {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border: 1px solid var(--blue-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    cursor: pointer;
     color: var(--blue-color);
 }
 
-
-.btn_product:hover {
-    background-color: var(--blue-color);
-    color: var(--bg-color);
+.editar__container .eliminar__icono {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border: 1px solid var(--blue-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    color: var(--blue-color);
 }
+
+.editar__container .editaricono:hover {
+    color: var(--bg-color);
+    border: 0.1rem solid var(--bg-color);
+    background-color: var(--blue-color);
+}
+
+.editar__container .eliminar__icono:hover{
+    color: var(--bg-color);
+    border: 0.1rem solid var(--bg-color);
+    background-color: var(--blue-color);
+}
+

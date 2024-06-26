@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Alurageek-Productos</title>
+    <title> Admin-Editar </title>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,12 @@
 
     <!--Favicon-->
     <link rel="shortcut icon" href="/assets/img/svg/favicon.ico" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!--Font-awesome-->
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css>
    
     <!--Styles-->
-    <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="stylesheet" href="../assets/css/add_product.css">
 
 </head>
 
@@ -28,41 +28,55 @@
 
         <a href="/index.html" class="logo"><img src="../assets/img/svg/Logo.svg" alt="Logo"></a>
 
+
         <!--NavBar-->
 
         <nav class="navbar">
 
-            <a href="/index.html" >
-                <button class="btn">Home</button>
-            </a>
-           
-            <a href="./add_product.html" class="header__login__link">
-                    <button class="btn">New Product</button>
-            </a>
-            
-
+            <div class="icons">
+                <a href="./admin.html" class="header__login__link">
+                        
+                    <button class="header__loginBtn btn">Menú Administrador</button>
+                </a>
+            </div>
+        
         </nav>
 
     </header>
 
      <!---------- MAIN ---------->
      <main>
-        <!---------- start SHOP ---------->
-        <section class="container">
-           <div class="shop">
-
-            <h1 class="heading">Administrar<span>Productos</span></h1>
-            
-                <div class="list" data-productos>
-                        
-                </div>
-                
+        <!---------- start EDIT SECTION ---------->
+        <section class="product__add">
+            <div class="product__box">
+                <form class="product__form"  data-form>
+                    <h1 class="product__title">Editar producto</h1>
+                    <div class="input__container ">
+                        <label for="">Url de imagen</label>
+                        <input class="product__img" type="text" placeholder="https://example.com/my-img.png"  required data-url>
+                    </div>
+                    <div class="input__container">
+                        <label for="">Categoría</label>
+                        <input class="product__category" type="text" name="product" required placeholder="consolas" data-category>
+                    </div>
+                    <div class="input__container">
+                        <label for="">Nombre del producto</label>
+                        <input class="product__name" type="text" name="name" data-name>
+                    </div>
+                    <div class="input__container">
+                        <label for="price">Precio del producto</label>
+                        <input class="product__price" type="text" required placeholder="$200.00" data-price>
+                    </div>
+                    <div class="input__container">
+                        <label for="">Descripción del producto</label>
+                        <textarea class="product__description" name="description" cols="30" rows="10" data-description></textarea>
+                    </div>
+                    <input class="input__btn" type="submit" value="Finalizar">
+                </form>
             </div>
-         
-    
-        </section>
 
-        <!---------- end SHOP ---------->
+        </section>
+        <!---------- end EDIT SECTION  ---------->
 
 
     </main>
@@ -152,8 +166,8 @@
 
 <!-- Link JS -->
 <script src="../assets/js/scripts.js"></script>
-<script type="module" src="../assets/controllers/admin.js"></script>
-
+<script type="module" src="../assets/controllers/edit_product.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- Font awesome JS -->
 <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>
 </body>
