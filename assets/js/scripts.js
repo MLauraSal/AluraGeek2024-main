@@ -68,13 +68,6 @@ window.onscroll = () => {
     
 }
 
-/*
- * FUNCTION CART
-*/
-const cartBtn = document.querySelector('#cart-btn');
-document.getElementById("cart-btn").addEventListener("click", () => {
-    window.location.href = "/pages/products.html";
-});
 
 
 

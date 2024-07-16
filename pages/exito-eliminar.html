@@ -19,6 +19,7 @@
    
     <!--Styles-->
     <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="stylesheet" href="../assets/css/error.css">
 
 </head>
 
@@ -47,22 +48,16 @@
 
      <!---------- MAIN ---------->
      <main>
-        <!---------- start SHOP ---------->
-        <section class="container">
-           <div class="shop">
-
-            <h1 class="heading">Administrar<span>Productos</span></h1>
-            
-                <div class="list" data-productos>
-                        
-                </div>
-                
+        <!---------- start EXITO ---------->
+        <section class="error">
+            <div class="error__container">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <h3>El producto se eliminó</h3>
+                <a href="../pages/admin.html">Volver</a>
             </div>
-         
-    
         </section>
 
-        <!---------- end SHOP ---------->
+        <!---------- end EXITO ---------->
 
 
     </main>
@@ -153,10 +148,6 @@
 <!-- Link JS -->
 <script src="../assets/js/scripts.js"></script>
 
-<script type="module" src="../assets/controllers/search_result.js"></script>
-<script type="module" src="../assets/controllers/search.js"></script>
-
-<script type="module" src="../assets/controllers/admin.js"></script>
 
 <!-- Font awesome JS -->
 <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>

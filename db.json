@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "id": "2",
-      "img": "/assets/img/starwars/auriculares.jpg",
-      "name": "Auriculares star wars",
-      "price": "$4500.00",
-      "description": "Auriculares star wars gamers rojo y negro",
-      "category": "starwars"
-    },
-    {
       "id": "3",
       "img": "/assets/img/accesorios/D_NQ_NP_838369-MLM70834536107_082023-W.png",
       "name": "Mochila Pikachu",
@@ -47,6 +39,38 @@
       "price": "$ 34.100",
       "description": "Lámpara de 14 cm con cable USB\nNo incluye: 3 pilas AAA \n",
       "id": "2d819029-105d-4828-ad31-b467a310cc8f"
+    },
+    {
+      "id": "e5eec3f5-6255-4f2f-80fa-c333048d8bc7",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_970261-MLU74424378377_022024-F.webp",
+      "name": "Sony Playstation 5",
+      "price": "$1019000",
+      "description": "825gb Standard Color Blanco Y Negro",
+      "category": "consolas"
+    },
+    {
+      "id": "3379ee26-0ac0-4f1e-85ad-672a4584d26b",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_933843-MLU72748485789_112023-F.webp",
+      "name": "Consola Playstation Ps4",
+      "price": "$770000",
+      "description": "1tb God Of War Ragnarok Bundle",
+      "category": "consolas"
+    },
+    {
+      "id": "44cbad7f-6fe0-4590-b4da-b2b86e506cfb",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_803086-MLA47920649105_102021-F.webp",
+      "name": "Nintendo Switch OLED ",
+      "price": "$800000",
+      "description": " 64GB Standard color neón 2021",
+      "category": "consolas"
+    },
+    {
+      "id": "28f3187c-6d6f-40a6-9695-df434e8576eb",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_641897-MLU75436656710_042024-F.webp",
+      "name": "Auriculares in-ear gamer inalámbricos",
+      "price": "$7000",
+      "description": "TWS F9-5 BTH-F9-5 negro con luz verde LED",
+      "category": "accesorios"
     }
   ]
 }
