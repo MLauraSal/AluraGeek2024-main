@@ -3,7 +3,7 @@
     "functions": {
       "api/index.js": {
         "memory": 1024,
-        "includeFiles": "db.json"
+        "includeFiles": "./db.json"
       }
     },
     "rewrites": [
