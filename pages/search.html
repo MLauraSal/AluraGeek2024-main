@@ -53,13 +53,12 @@
         </form>
 
         <!--Login-->
-        <form action="#" class="login-form">
+        <form action="#" class="login-form" id="loginForm">
             <h3>Login</h3>
-            <input type="email" placeholder="Email registrado" class="box">
-            <input type="password" placeholder="Contraseña" class="box">
+            <input type="email" placeholder="Email registrado" class="box" id="email" required>
+            <input type="password" placeholder="Contraseña" class="box" id="password" required>
             <p>¿No estas registrado/a?<a href="../pages/register.html"> Crea tu cuenta </a></p>
             <input type="submit" value="Login" class="btn">
-
         </form>
 
 
@@ -176,6 +175,7 @@
 
     <!-- Link JS -->
     <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/loginAdmin.js"></script>
     <script type="module" src="../assets/controllers/search_result.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"

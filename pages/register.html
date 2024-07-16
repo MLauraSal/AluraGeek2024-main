@@ -55,13 +55,12 @@
         </form>
 
         <!--Login-->
-        <form action="#" class="login-form" id="login">
+        <form action="#" class="login-form" id="loginForm">
             <h3>Login</h3>
-            <input type="email" placeholder="Email registrado" class="box">
-            <input type="password" placeholder="Contraseña" class="box">
-            <p>¿No estas registrado/a?<a href="../pages/contact.html"> Crea tu cuenta </a></p>
+            <input type="email" placeholder="Email registrado" class="box" id="email" required>
+            <input type="password" placeholder="Contraseña" class="box" id="password" required>
+            <p>¿No estas registrado/a?<a href="../pages/register.html"> Crea tu cuenta </a></p>
             <input type="submit" value="Login" class="btn">
-
         </form>
     </header>
 
@@ -251,6 +250,7 @@
     <!-- Link JS -->
     <script src="../assets/js/scripts.js"></script>
     <script src="../assets/js/register.js"></script>
+    <script src="../assets/js/loginAdmin.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Font awesome JS -->
     <script src="https://kit.fontawesome.com/70afb11fe8.js" crossorigin="anonymous"></script>

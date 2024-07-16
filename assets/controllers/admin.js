@@ -4,7 +4,7 @@ import { productServices } from "../../services/product-service.js";
 
 
 
-const crearNuevoProducto = (img, name, price, description, id) => {
+const crearNuevoProducto = (img, name, price, description, category, id) => {
 	   const tarjeta = document.createElement("div");
 	       tarjeta.classList.add("list");
 	    const contenido = `
@@ -21,7 +21,7 @@ const crearNuevoProducto = (img, name, price, description, id) => {
                     <a href="../pages/edit_product.html?id=${id}" class="editaricono" ">
                        <i class="fa-solid fa-pencil"></i>
                     </a>
-                    <button type="button" class="eliminar__icono" id="${id}">
+                    <button type="button" class="eliminar__icono button" id="${id}">
                         <i class="fa-solid fa-trash"></i>
                     </button>
                 </div> 

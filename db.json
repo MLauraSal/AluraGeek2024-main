@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "img": "/assets/img/consolas/Consola Gaming 8bits Noga Ng-fg02 2joystick Color Gris.jpg",
-      "name": "Xbox Series S 512gb Digital",
-      "price": "$4500.00",
-      "description": "Consola Xbox Series S 512gb Digital Blanco",
-      "category": "consolas"
-    },
-    {
       "id": "2",
       "img": "/assets/img/starwars/auriculares.jpg",
       "name": "Auriculares star wars",
@@ -25,12 +17,36 @@
       "category": "accesorios"
     },
     {
-      "id": "e48893cf-2e5c-4f3d-93c5-3ed54ee1600c",
-      "img": "https://www.cibermoda.mx/assets/images/craft_images/productos/Consola-Retro-Portatil-X12-Plus-pantalla-7-pulgadas-color-rojo-azul-joystick.webp",
-      "name": "X12 Plus",
-      "price": "$45000",
-      "description": "consola portatil, 16 Gb de RAM",
-      "category": "consolas"
+      "id": "ef5a3255-9b30-4051-ac71-cc93f1fc2a9d",
+      "img": "https://static1.funidelia.com/240259-f4_large/funko-pop-tower-recon-specialist-fortnite.jpg",
+      "name": "Funko POP! Tower Recon Specialist - Fortnite",
+      "price": "$15900",
+      "description": " Figura vinilo Funko POP de 9 cm",
+      "category": "accesorios"
+    },
+    {
+      "img": "https://static1.funidelia.com/474420-f4_large/funko-pop-baby-yoda-the-mandalorian.jpg",
+      "category": "starwars",
+      "name": "Funko POP! Baby Yoda - The Mandalorian",
+      "price": "$19000",
+      "description": "Figura Funko POP en caja original",
+      "id": "0f918e80-e62e-4b85-a588-8014d6bd3299"
+    },
+    {
+      "img": "https://static1.funidelia.com/526789-f4_large/gofrera-the-mandalorian-star-wars.jpg",
+      "category": "starwars",
+      "name": "Gofrera The Mandalorian - Star Wars",
+      "price": "$28900",
+      "description": " Mini gofrera con impresión del logo en el gofre de 17 x 13 x 10 cm. Enchufe Europeo ",
+      "id": "902f611d-69ed-4569-824d-150f68739b85"
+    },
+    {
+      "img": "https://static1.funidelia.com/514752-f4_large/lampara-the-mandalorian-star-wars.jpg",
+      "category": "starwars",
+      "name": " Lámpara The Mandalorian - Star Wars",
+      "price": "$ 34.100",
+      "description": "Lámpara de 14 cm con cable USB\nNo incluye: 3 pilas AAA \n",
+      "id": "2d819029-105d-4828-ad31-b467a310cc8f"
     }
   ]
 }

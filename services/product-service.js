@@ -1,5 +1,5 @@
 // Define the base API URL
-const BASE_API_URL = "http://localhost:5501/products";
+const BASE_API_URL = "http://localhost:5503/products";
 
 
 
@@ -41,7 +41,7 @@ export const productServices = {
 
   // Delete a product by its ID
   eliminarProducto: (id) => fetchData(`${BASE_API_URL}/${id}`, { method: "DELETE" }),
-
+ 
   // Get details of a product by its ID
   detalleProducto: (id) => fetchData(`${BASE_API_URL}/${id}`),
 

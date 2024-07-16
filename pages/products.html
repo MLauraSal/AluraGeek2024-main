@@ -53,13 +53,12 @@
             <label for="search-box" class="fas fa-search" id="icon__search" data-search></label>
         </form>
         <!--Login-->
-        <form action="#" class="login-form">
+        <form action="#" class="login-form" id="loginForm">
             <h3>Login</h3>
-            <input type="email" placeholder="Email registrado" class="box">
-            <input type="password" placeholder="Contraseña" class="box">
+            <input type="email" placeholder="Email registrado" class="box" id="email" required>
+            <input type="password" placeholder="Contraseña" class="box" id="password" required>
             <p>¿No estas registrado/a?<a href="../pages/register.html"> Crea tu cuenta </a></p>
             <input type="submit" value="Login" class="btn">
-
         </form>
         
         
@@ -173,6 +172,7 @@
   
     <!-- Link JS -->
     <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/loginAdmin.js"></script>
     <script type="module" src="../assets/controllers/allproducts.js"></script>
     
  
