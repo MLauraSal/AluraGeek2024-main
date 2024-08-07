@@ -1,9 +1,10 @@
-const { createProxyMiddleware } = require('http-proxy-middleware');
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('./db.json');
+const middlewares = jsonServer.defaults();
 
-module.exports = (req, res) => {
-  const jsonServer = createProxyMiddleware({
-    target: 'http://localhost:5501',
-    changeOrigin: true,
-  });
-  return jsonServer(req, res);
-};
+server.use(middlewares);
+server.use(router);
+server.listen(3000, () => {
+  console.log('JSON Server is running');
+});
